@@ -103,6 +103,7 @@ export const Product = () => {
       showAlert("更新成功", "success");
       setEditRow(null);
       query(condition);
+      queryProduct();
     }
   };
 
@@ -126,6 +127,7 @@ export const Product = () => {
       showAlert("刪除成功", "success");
       setDeletedId(null);
       query(condition);
+      queryProduct();
     }
   };
 
